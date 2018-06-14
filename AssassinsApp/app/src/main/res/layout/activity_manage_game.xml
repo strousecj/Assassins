@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.chandler.assassinsapp.ManageGame">
+
+        <!--<Button android:id="@+id/invite_players_button"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:textSize="10dp"-->
+            <!--android:text="Invite Players"-->
+            <!--android:onClick="invitePlayers" />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/send_invite_button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:textSize="10dp"
+            android:text="Invite Players"
+            android:onClick="onInviteClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/start_game_button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="10dp"
+            android:text="Start Game"
+            android:onClick="startGame" />
+    </LinearLayout>
+
+</LinearLayout>

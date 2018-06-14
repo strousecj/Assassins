@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <Button android:id="@+id/create_game_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:textSize="10dp"
+        android:text="Create Game"
+        android:onClick="createGame" />
+
+    <Button android:id="@+id/manage_game_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:textSize="10dp"
+        android:layout_marginLeft="150dp"
+        android:text="Manage Game"
+        android:onClick="manageGame" />
+
+    <Button android:id="@+id/current_game_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:textSize="10dp"
+        android:layout_marginTop="140dp"
+        android:text="Current Game"
+        android:onClick="currentGame" />
+
+    <Button android:id="@+id/settings_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:textSize="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="150dp"
+        android:text="Settings"
+        android:onClick="settings" />
+</RelativeLayout>

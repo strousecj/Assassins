@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_game"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.chandler.assassinsapp.CreateGame">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/location_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/location_hint"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/weapon_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/weapon_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/weapon_rule_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/weapon_rules_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/safe_place_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/safe_place_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/start_date_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Select Start Date"
+            android:onClick="createGame" />
+        <EditText
+            android:id="@+id/start_date_text"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="3dp"
+            android:hint="Start Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/start_time_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Select Start Time"
+            android:onClick="createGame" />
+        <EditText
+            android:id="@+id/start_time_text"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="3dp"
+            android:hint="Start Time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/end_date_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Select End Date"
+            android:onClick="createGame" />
+        <EditText
+            android:id="@+id/end_date_text"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="3dp"
+            android:hint="End Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/end_time_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Select End Time"
+            android:onClick="createGame" />
+        <EditText
+            android:id="@+id/end_time_text"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:background="#ccc"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="3dp"
+            android:hint="End Time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/create_game_button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Create Game"
+            android:onClick="createGame" />
+    </LinearLayout>
+</LinearLayout>
